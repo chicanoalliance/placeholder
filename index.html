@@ -12,19 +12,50 @@
 
           <!-- CSS -->
           <link rel="stylesheet" type="text/css" href="main.css" />
+          <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+          <!-- javascript & jQuery -->
+          <script src="http://code.jquery.com/jquery.js"></script>
+          <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+          <script>
+          $(document).ready(function() {
+               $("#m-nav").click(function() {
+                    $("ul#nav").toggle();
+               });
+          });
+          </script>
      </head>
      <body>
           <!-- Navigation -->
           <nav>
-               <span id="title"></span>
+               <div id="nav-wrap">
+                    <span id="d-title">Willamette Chicano Alliance</span>
+                    <span id="m-title">WCA</span>
+                    <i class="fa fa-bars" id="m-nav" aria-hidden="true"></i>
 
-               <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">CMP</a></li>
-                    <li><a href="#">CLSI</a></li>
-               </ul>
+                    <ul id="nav">
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">Contact</a></li>
+                         <li><a href="#">CMP</a></li>
+                         <li><a href="#">CLSI</a></li>
+                         <li><a href="#" class="donate">Donate</a></li>
+                    </ul>
+               </div>
           </nav>
+          <div id="intro-sec"></div>
+          <center>
+               <div id="third-quick">
+                    <div class="quick-box">
+                         <h1>What</h1>
+                    </div>
+                    <div class="quick-box">
+                         <h1>What</h1>
+                    </div>
+                    <div class="quick-box">
+                         <h1>What</h1>
+                    </div>
+               </div>
+          </center>
      </body>
 </html>
